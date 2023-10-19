@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planetas</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#tierra-info").show();
+        $("#venus-info").hide();
+        $("#mercurio-info").hide();
+        $("#marte-info").hide();
+        $("#jupiter-info").hide();
+        $("#saturno-info").hide();
+        $("#urano-info").hide();
+        $("#neptuno-info").hide();
+        $("#tierra").click(function () {
+          $("#tierra-info").show();
+          $("#venus-info").hide();
+          $("#mercurio-info").hide();
+          $("#marte-info").hide();
+          $("#jupiter-info").hide();
+          $("#saturno-info").hide();
+          $("#urano-info").hide();
+          $("#neptuno-info").hide();
+        });
+
+        $("#mercurio").click(function () {
+          $("#mercurio-info").show();
+          $("#venus-info").hide();
+          $("#tierra-info").hide();
+          $("#marte-info").hide();
+          $("#jupiter-info").hide();
+          $("#saturno-info").hide();
+          $("#urano-info").hide();
+          $("#neptuno-info").hide();
+        });
+        $("#venus").click(function () {
+          $("#venus-info").show();
+          $("#mercurio-info").hide();
+          $("#tierra-info").hide();
+          $("#marte-info").hide();
+          $("#jupiter-info").hide();
+          $("#saturno-info").hide();
+          $("#urano-info").hide();
+          $("#neptuno-info").hide();
+        });
+
+        $("#marte").click(function () {
+          $("#marte-info").show();
+          $("#mercurio-info").hide();
+          $("#venus-info").hide();
+          $("#tierra-info").hide();
+          $("#jupiter-info").hide();
+          $("#saturno-info").hide();
+          $("#urano-info").hide();
+          $("#neptuno-info").hide();
+        });
+
+        $("#jupiter").click(function () {
+          $("#jupiter-info").show();
+          $("#mercurio-info").hide();
+          $("#venus-info").hide();
+          $("#tierra-info").hide();
+          $("#marte-info").hide();
+          $("#saturno-info").hide();
+          $("#urano-info").hide();
+          $("#neptuno-info").hide();
+        });
+
+        $("#saturno").click(function () {
+          $("#saturno-info").show();
+          $("#mercurio-info").hide();
+          $("#venus-info").hide();
+          $("#tierra-info").hide();
+          $("#marte-info").hide();
+          $("#jupiter-info").hide();
+          $("#urano-info").hide();
+          $("#neptuno-info").hide();
+        });
+
+        $("#urano").click(function () {
+          $("#urano-info").show();
+          $("#mercurio-info").hide();
+          $("#venus-info").hide();
+          $("#tierra-info").hide();
+          $("#marte-info").hide();
+          $("#jupiter-info").hide();
+          $("#saturno-info").hide();
+          $("#neptuno-info").hide();
+        });
+
+        $("#neptuno").click(function () {
+          $("#neptuno-info").show();
+          $("#mercurio-info").hide();
+          $("#venus-info").hide();
+          $("#tierra-info").hide();
+          $("#marte-info").hide();
+          $("#jupiter-info").hide();
+          $("#saturno-info").hide();
+          $("#urano-info").hide();
+        });
+      });
+    </script>
+  </head>
+  <video id="background-video" autoplay loop muted>
+    <source
+      src="images/1 Hour Space Flight [Star field].mp4"
+      type="video/mp4"
+    />
+  </video>
+  <div class="body-planetas">
+    <div class="header-planetas">
+      <div class="nav-planetas">
+        <a href="index.html"><li>HOME</li></a>
+        <a href="sistema.html"><li>SISTEMA SOLAR</li></a>
+        <li><a href="">PERFIL</a></li>
+      </div>
+    </div>
+
+    <div class="container-planetas">
+      <div class="container-izquierda">
+        <div class="columna-planetas">
+          <li class="Mercurio">
+            <img src="images/Mercurio.svg" alt="" id="mercurio" />
+            <div class="texto-planeta">
+              <h1>Mercurio</h1>
+              <h2>Hermes</h2>
+            </div>
+          </li>
+          <li class="Venus">
+            <img src="images/Venus.svg" alt="" id="venus" />
+            <div class="texto-planeta">
+              <h1>Venus</h1>
+              <h2>Afrodita</h2>
+            </div>
+          </li>
+          <li class="Tierra">
+            <img src="images/Tierra.svg" alt="" id="tierra" />
+            <div class="texto-planeta">
+              <h1>Tierra</h1>
+              <h2>Gea</h2>
+            </div>
+          </li>
+          <li class="Marte">
+            <img src="images/Marte.svg" alt="" id="marte" />
+            <div class="texto-planeta">
+              <h1>Marte</h1>
+              <h2>Ares</h2>
+            </div>
+          </li>
+          <li class="Jupiter">
+            <img src="images/Jupiter.svg" alt="" id="jupiter" />
+            <div class="texto-planeta">
+              <h1>Jupiter</h1>
+              <h2>Zeus</h2>
+            </div>
+          </li>
+          <li class="Saturno">
+            <img src="images/Saturno.svg" alt="" id="saturno" />
+            <div class="texto-planeta">
+              <h1>Saturno</h1>
+              <h2>Cronos</h2>
+            </div>
+          </li>
+          <li class="Urano">
+            <img src="images/Neptuno.svg" alt="" id="urano" />
+            <div class="texto-planeta">
+              <h1>Urano</h1>
+              <h2>Urano</h2>
+            </div>
+          </li>
+          <li class="Neptuno">
+            <img src="images/Urano.svg" alt="" id="neptuno" />
+            <div class="texto-planeta">
+              <h1>Neptuno</h1>
+              <h2>Poseidon</h2>
+            </div>
+          </li>
+        </div>
+      </div>
+      <div class="container-derecha">
+        <div class="box-mercurio" id="mercurio-info">
+          <img src="images/Mercurio.svg" alt="" />
+          <div class="barra-info">
+            <li>
+              <h1>Distancia desde el Sol</h1>
+              <h2>50 millones de km</h2>
+            </li>
+            <li>
+              <h1>Radio</h1>
+              <h2>2.439,7 km</h2>
+            </li>
+            <li>
+              <h1>Masa</h1>
+              <h2>3,285 x 10^23 kg (0,055)</h2>
+            </li>
+            <li>
+              <h1>Densidad</h1>
+              <h2>5,43 g/cm^3</h2>
+            </li>
+            <li>
+              <h1>Duración del día</h1>
+              <h2>58d 15h 30m</h2>
+            </li>
+            <li>
+              <h1>Periodo orbital</h1>
+              <h2>88 días</h2>
+            </li>
+            <li>
+              <h1>Edad</h1>
+              <h2>4,503 miles de millones años</h2>
+            </li>
+          </div>
+        </div>
+        <div class="box-venus" id="venus-info">
+          <img src="images/Venus.svg" alt="" />
+          <div class="barra-info">
+            <li>
+              <h1>Distancia desde el Sol</h1>
+              <h2>108,2 millones de km</h2>
+            </li>
+            <li>
+              <h1>Radio</h1>
+              <h2>6.051,8 km</h2>
+            </li>
+            <li>
+              <h1>Masa</h1>
+              <h2>4,867 x 10^24 kg (0,815 M⊕)</h2>
+            </li>
+            <li>
+              <h1>Densidad</h1>
+              <h2>5,24 g/cm³</h2>
+            </li>
+            <li>
+              <h1>Duración del día</h1>
+              <h2>243d 0h 0m</h2>
+            </li>
+            <li>
+              <h1>Periodo orbital</h1>
+              <h2>225 días</h2>
+            </li>
+            <li>
+              <h1>Edad</h1>
+              <h2>4,503 miles de millones años</h2>
+            </li>
+          </div>
+        </div>
+
+        <div class="box-tierra" id="tierra-info">
+          <img src="images/Tierra.svg" alt="" />
+          <div class="barra-info">
+            <li>
+              <h1>Distancia desde el Sol</h1>
+              <h2>150 millones de km</h2>
+            </li>
+            <li>
+              <h1>Radio</h1>
+              <h2>6.371 km</h2>
+            </li>
+            <li>
+              <h1>Masa</h1>
+              <h2>5,972 x 10^24 kg</h2>
+            </li>
+            <li>
+              <h1>Densidad</h1>
+              <h2>5,51 g/cm³</h2>
+            </li>
+            <li>
+              <h1>Duración del día</h1>
+              <h2>24h</h2>
+            </li>
+            <li>
+              <h1>Periodo orbital</h1>
+              <h2>365 días</h2>
+            </li>
+            <li>
+              <h1>Edad</h1>
+              <h2>4,543 miles de millones años</h2>
+            </li>
+          </div>
+        </div>
+
+        <div class="box-marte" id="marte-info">
+          <img src="images/Marte.svg" alt="" />
+          <div class="barra-info">
+            <li>
+              <h1>Distancia desde el Sol</h1>
+              <h2>227,9 millones de km</h2>
+            </li>
+            <li>
+              <h1>Radio</h1>
+              <h2>3.389,5 km</h2>
+            </li>
+            <li>
+              <h1>Masa</h1>
+              <h2>6,39 x 10^23 kg (0,107 M⊕)</h2>
+            </li>
+            <li>
+              <h1>Densidad</h1>
+              <h2>3,93 g/cm³</h2>
+            </li>
+            <li>
+              <h1>Duración del día</h1>
+              <h2>1d 0h 37m</h2>
+            </li>
+            <li>
+              <h1>Periodo orbital</h1>
+              <h2>687 días</h2>
+            </li>
+            <li>
+              <h1>Edad</h1>
+              <h2>4,603 miles de millones años</h2>
+            </li>
+          </div>
+        </div>
+
+        <div class="box-jupiter" id="jupiter-info">
+          <img src="images/Jupiter.svg" alt="" />
+          <div class="barra-info">
+            <li>
+              <h1>Distancia desde el Sol</h1>
+              <h2>778,5 millones de km</h2>
+            </li>
+            <li>
+              <h1>Radio</h1>
+              <h2>69.911 km</h2>
+            </li>
+            <li>
+              <h1>Masa</h1>
+              <h2>1,898 x 10^27 kg</h2>
+            </li>
+            <li>
+              <h1>Densidad</h1>
+              <h2>1,33 g/cm³</h2>
+            </li>
+            <li>
+              <h1>Duración del día</h1>
+              <h2>0d 9h 56m</h2>
+            </li>
+            <li>
+              <h1>Periodo orbital</h1>
+              <h2>12 años</h2>
+            </li>
+            <li>
+              <h1>Edad</h1>
+              <h2>4,603 miles de millones años</h2>
+            </li>
+          </div>
+        </div>
+        <div class="box-saturno" id="saturno-info">
+          <img src="images/Saturno.svg" alt="" />
+          <div class="barra-info">
+            <li>
+              <h1>Distancia desde el Sol</h1>
+              <h2>1,434 millones de km</h2>
+            </li>
+            <li>
+              <h1>Radio</h1>
+              <h2>58.232 km</h2>
+            </li>
+            <li>
+              <h1>Masa</h1>
+              <h2>5,683 x 10^26 kg</h2>
+            </li>
+            <li>
+              <h1>Densidad</h1>
+              <h2>687 kg/m³</h2>
+            </li>
+            <li>
+              <h1>Duración del día</h1>
+              <h2>0d 10h 34m</h2>
+            </li>
+            <li>
+              <h1>Periodo orbital</h1>
+              <h2>29 años</h2>
+            </li>
+            <li>
+              <h1>Edad</h1>
+              <h2>4,503 miles de millones años</h2>
+            </li>
+          </div>
+        </div>
+        <div class="box-urano" id="urano-info">
+          <img src="images/Neptuno.svg" alt="" />
+          <div class="barra-info">
+            <li>
+              <h1>Distancia desde el Sol</h1>
+              <h2>2,871 millones de km</h2>
+            </li>
+            <li>
+              <h1>Radio</h1>
+              <h2>25.362 km</h2>
+            </li>
+            <li>
+              <h1>Masa</h1>
+              <h2>8,681 x 10^25 kg</h2>
+            </li>
+            <li>
+              <h1>Densidad</h1>
+              <h2>1,27 g/cm³</h2>
+            </li>
+            <li>
+              <h1>Duración del día</h1>
+              <h2>0d 17h 14m</h2>
+            </li>
+            <li>
+              <h1>Periodo orbital</h1>
+              <h2>84 años</h2>
+            </li>
+            <li>
+              <h1>Edad</h1>
+              <h2>4,503 miles de millones años</h2>
+            </li>
+          </div>
+        </div>
+        <div class="box-neptuno" id="neptuno-info">
+          <img src="images/Urano.svg" alt="" />
+          <div class="barra-info">
+            <li>
+              <h1>Distancia desde el Sol</h1>
+              <h2>4,495 millones de km</h2>
+            </li>
+            <li>
+              <h1>Radio</h1>
+              <h2>24.622 km</h2>
+            </li>
+            <li>
+              <h1>Masa</h1>
+              <h2>1,024 x 10^26 kg (17,15 M⊕)</h2>
+            </li>
+            <li>
+              <h1>Densidad</h1>
+              <h2>1,27 g/cm³</h2>
+            </li>
+            <li>
+              <h1>Duración del día</h1>
+              <h2>0d 16h 6m</h2>
+            </li>
+            <li>
+              <h1>Periodo orbital</h1>
+              <h2>165 años</h2>
+            </li>
+            <li>
+              <h1>Edad</h1>
+              <h2>4,503 miles de millones años</h2>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>

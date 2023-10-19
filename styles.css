@@ -1,0 +1,599 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+  font-family: "Mifuente";
+  src: url(fonts/Barking\ at\ Stars\ Straight.otf);
+}
+
+#background-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+/* body{
+    background-image: url(images/Untitled.svg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+} */
+nav {
+  width: 100vw;
+  height: 6vh;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-izquierda li img {
+  width: 220px;
+}
+
+.nav-izquierda {
+  width: 50%;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.nav-izquierda li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-izquierda li a {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+/* ========CONTENIDO======= */
+.container {
+  width: 100vw;
+  height: 70vh;
+  /* background-color: green; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .texto {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  /* background-color: #fff;  */
+  width: 50%;
+  margin-left: 0px;
+  text-align: center;
+  align-items: center;
+}
+
+.container .texto h1 {
+  font-size: 120px;
+  font-family: "Mifuente";
+  background: #fe8474; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fe8474,
+    #fe255e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fe8474,
+    #fe255e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 100;
+}
+
+.container .texto .titulo {
+  color: white;
+  font-size: 60px;
+}
+
+.container .texto h2 {
+  /* border: 2px solid red; */
+  font-size: 20px;
+  color: white;
+  font-weight: 200;
+}
+
+.btn-gra2 {
+  background-image: linear-gradient(
+    to right,
+    #16a085 0%,
+    #f4d03f 51%,
+    #16a085 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 25px;
+  display: block;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 13px;
+  width: 28%;
+}
+
+.btn-gra2:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.container img {
+  width: 700px;
+  /* background-color: rebeccapurple; */
+}
+
+.container img {
+  width: 700px;
+  animation: mover ease-in 10s infinite alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(25px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+  75% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* @keyframes animacion {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.04);
+  }
+} */
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #ff4e50 0%,
+    #f9d423 51%,
+    #ff4e50 100%
+  );
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 25px;
+  display: block;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 2%;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+footer {
+  width: 100vw;
+  height: 24vh;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+footer .rectangulo {
+  /* background-color: pink; */
+  width: 80vw;
+  height: 90%;
+  border-radius: 25px 0px 0px 25px;
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.rectangulo-pequenio {
+  background-color: #2f2f2f;
+  width: 32%;
+  height: 90%;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  justify-content: space-evenly;
+  box-shadow: 5px 10px 50px black;
+}
+
+.rectangulo-pequenio h1 {
+  font-size: 50px;
+  font-family: "MiFuente";
+  font-weight: 200;
+}
+
+.rectangulo-pequenio h2 {
+  font-size: 20px;
+  font-weight: 200;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.planetas {
+  /* background-color: orange; */
+  width: 65%;
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.planetas img {
+  width: 100px;
+}
+
+.tarjeta {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tarjeta h1 {
+  text-shadow: 2px 2px 8px black;
+}
+
+.tarjeta h2 {
+  font-weight: 200;
+}
+
+/* =============== Planetas ================== */
+
+.body-planetas {
+  background-image: url(images/endless-constellation.svg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+}
+
+.nav-planetas {
+  /* background-color: yellow; */
+  width: 100vw;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-planetas li,
+a {
+  font-size: 20px;
+  list-style: none;
+  color: white;
+}
+
+.container-planetas {
+  /* background-color: red; */
+  width: 100vw;
+  height: 94vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.container-izquierda {
+  /* background-color: pink; */
+  width: 30vw;
+  height: 90%;
+  border-radius: 0px 25px 0px 0px;
+  border-top: 10px solid #75136d;
+  border-right: 10px solid #75136d;
+  backdrop-filter: blur(5px);
+  background-image: url(images/endless-constellation.svg);
+}
+
+.columna-planetas {
+  /* background-color: blue; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0px 25px 0px 0px;
+}
+
+.columna-planetas :first-child {
+  border-radius: 0px 25px 0px 0px;
+}
+
+.columna-planetas li {
+  /* background-color: green; */
+  width: 100%;
+  height: 12.5%;
+  border-bottom: 2.5px solid #75136d;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.columna-planetas li .texto-planeta {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  text-align: l;
+  width: 50%;
+}
+
+.columna-planetas li .texto-planeta h1 {
+  color: rgb(209, 193, 122);
+  font-size: 30px;
+}
+
+.columna-planetas li .texto-planeta h2 {
+  color: white;
+  font-weight: 200;
+}
+
+.columna-planetas img {
+  width: 85px;
+}
+
+.columna-planetas .Mercurio img {
+  height: 40%;
+}
+
+.columna-planetas .Venus img {
+  height: 75%;
+}
+
+.columna-planetas .Tierra img {
+  height: 80%;
+}
+
+.columna-planetas .Marte img {
+  height: 60%;
+}
+
+.columna-planetas .Jupiter img {
+  height: 95%;
+}
+
+.columna-planetas .Saturno img {
+  height: 100%;
+}
+
+.columna-planetas .Urano img {
+  height: 75%;
+}
+
+.columna-planetas .Neptuno img {
+  height: 75%;
+}
+
+.container-derecha {
+  /* background-color: #16a085; */
+  width: 65vw;
+  height: 95%;
+}
+
+.container-derecha .box-mercurio,
+.box-venus,
+.box-tierra,
+.box-marte,
+.box-jupiter,
+.box-saturno,
+.box-urano,
+.box-neptuno {
+  width: 63%;
+  height: 870px;
+  position: absolute;
+  /* margin-top: 2.5%; */
+  margin-left: 0.8%;
+}
+
+.container-derecha .box-mercurio {
+  /* background-color: #2f2f2f; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container-derecha .box-venus {
+  /* background-color: #f4d03f; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container-derecha .box-tierra {
+  /* background-color: #fe255e; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container-derecha .box-marte {
+  /* background-color: violet; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container-derecha .box-jupiter {
+  /* background-color: blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container-derecha .box-saturno {
+  /* background-color: aqua; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container-derecha .box-urano {
+  /* background-color: orange; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container-derecha .box-neptuno {
+  /* background-color: green; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.barra-info li h1 {
+  font-weight: 400;
+}
+
+.barra-info li h2 {
+  font-weight: 100;
+}
+
+.barra-info li {
+  list-style: none;
+}
+
+.box-mercurio img {
+  width: 30%;
+}
+
+.box-venus img {
+  width: 45%;
+}
+
+.box-tierra img {
+  width: 45%;
+}
+
+.box-marte img {
+  width: 30%;
+}
+
+.box-jupiter img {
+  width: 60%;
+}
+
+.box-saturno img {
+  width: 55%;
+}
+
+.box-urano img {
+  width: 30%;
+}
+
+.box-neptuno img {
+  width: 30%;
+}
+
+.container-derecha .box-mercurio .barra-info {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container-derecha .box-venus .barra-info {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container-derecha .box-tierra .barra-info {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container-derecha .box-marte .barra-info {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container-derecha .box-jupiter .barra-info {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container-derecha .box-saturno .barra-info {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container-derecha .box-urano .barra-info {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container-derecha .box-neptuno .barra-info {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* ====== CONTACTANOS ====== */
